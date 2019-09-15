@@ -61,6 +61,7 @@ body {
   color: #212529;
   text-align: right;
   background-color: #fff;
+  direction: rtl;
 }
 
 [tabindex="-1"]:focus {

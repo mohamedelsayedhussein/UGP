@@ -30,6 +30,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     overflow-x: hidden !important;
     background: #fff;
+    direction: rtl;
 }
 ul, ol, li {
     list-style-type: none;
@@ -309,6 +310,9 @@ header .menu .bars:hover .line {
     background: #F1F5F6;
 }
 .home-slider .properties-slider {
+    direction: ltr;
+}
+.home-slider .properties-slider {
     position: relative;
 }
 .home-slider .properties-slider .item .item-header {
@@ -561,6 +565,9 @@ header .menu .bars:hover .line {
     position: relative;
     padding: 20vh 0;
 }
+.contact-section .slider-container .contact-slider {
+    direction: ltr;
+}
 .contact-section .contact-title p {
     color: #84939f;
     font-size: 1.2rem;
@@ -707,6 +714,7 @@ footer .footer-text {
 .single-property-section {
     min-height: 100vh;
     margin-top: -2rem;
+    direction: ltr;
 }
 .quick-form.form-area {
     background: #f1f5f6;
@@ -1105,6 +1113,7 @@ footer .footer-text {
     background: none;
     -webkit-appearance: none;
     appearance: none;
+    direction: ltr;
 }
 .our-properties .quick-form .price-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
