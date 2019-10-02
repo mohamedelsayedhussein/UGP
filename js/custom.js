@@ -62,9 +62,6 @@ $(document).ready(function(){
 
   });
 
-//  init aos animation library
-  AOS.init();
-
   // select to plugin
   // $('#mselected').select2({
   //   placeholder: ""
