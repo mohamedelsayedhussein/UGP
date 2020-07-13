@@ -1,5 +1,8 @@
 
 @media (max-width: 420px) {
+    header nav.menu .logo {
+        width: 5rem !important;
+    }
     header .menu .log .log-img {
         display: none;
     }
@@ -12,9 +15,6 @@
     }
 }
 @media (max-width: 450px) {
-    header .menu .logo {
-        width: 120px;
-    }
     .banner .form-area .form-group .form-control {
         font-size: .7rem !important;
     }
@@ -36,10 +36,6 @@
     header .container-fluid {
         width: 100%;
     }
-    .home-slider {
-        margin-top: 0;
-        padding: 2rem 0 ;
-    }
     .blog-section .slider-area .blog-slider .blog .item {
         flex-direction: column;
     }
@@ -57,6 +53,9 @@
     }
 }
 @media (max-width: 650px) {
+    header nav.menu .logo {
+        width: 6rem;
+    }
     header .menu .social-links {
         display: none !important;
     }
@@ -66,18 +65,12 @@
         width: 200px;
     }
     .banner .form-area {
-        padding: 2.5rem 2.5rem 2.5rem;
+        padding: 0;
     }
     .banner .form-area .submit-btn {
         bottom: 10px;
         top: initial;
         left: 2.5rem;
-    }
-    .home-slider .properties-slider .item .item-header {
-        border-right: 0;
-    }
-    .home-slider .properties-slider .item .item-body img {
-        width: 100%;
     }
     .blog-section .slider-area {
         max-width: 95%;
@@ -155,11 +148,6 @@
         margin: 1rem 3rem;
     }
 }
-@media (max-width: 767px) and (min-width: 420px) {
-    .home-slider .properties-slider .item .item-footer {
-        padding: .5rem 3rem;
-    }
-}
 @media (max-width: 992px) {
     .contact-section .bg-title h2 {
         font-size: 3rem !important;
@@ -174,18 +162,6 @@
     }
     .our-blog-section .flex-box .box {
         width: 32%;
-    }
-}
-@media (max-width: 1055px) {
-    .home-slider .properties-slider .PrevArrow {
-        left: 1rem;
-        border-top-color: #fff !important;
-        border-right-color: #fff !important;
-    }
-    .home-slider .properties-slider .NextArrow {
-        right: 1rem;
-        border-top-color: #fff !important;
-        border-left-color: #fff !important;
     }
 }
 @media (max-width: 1200px) {
@@ -267,6 +243,14 @@
         color: #fff;
         font-size: .9rem;
     }
+    header .menu .dropdown-about .submenu {
+        width: 100%;
+        background: #555;
+    }
+    header .menu .dropdown-about i {
+        right: 1rem;
+        transform: translateY(-50%);
+    }
     header .menu .bars {
         display: block !important;
         transition: .3s;
@@ -287,10 +271,10 @@
 }
 @media (min-width: 1301px) and (max-width: 1400px) {
     header .menu .links .item .link {
-        margin-right: 1.2rem;
+        margin-right: 1.5rem;
     }
     header .menu .links .item .link:after {
-        right: -.6rem;
+        right: -.8rem;
     }
 }
 

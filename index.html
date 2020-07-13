@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,24 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home | United Gulf Properties</title>
+    <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="vendors/all.css">
     <link rel="stylesheet" href="vendors/animate.css">
     <link rel="stylesheet" href="vendors/bootstrap.css">
     <link rel="stylesheet" href="vendors/pace-theme-minimal.css">
     <link rel="stylesheet" href="vendors/slick.css">
-    <link rel="stylesheet" href="vendors/select2.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap">
+    <link rel="stylesheet" href="vendors/select2.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri&family=Lato&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="shortcut icon" href="img/logo.png">
 </head>
 
 <body>
+    <div class="chat-with-us">
+        <div class="icon">
+            <i class="far fa-comment-dots"></i>
+            <!-- <i class="fas fa-chevron-down"></i> -->
+        </div>
+        <span>Need Help?</span>
+        <div class="chat-box">
+            <h3>Need Help?</h3>
+            <div class="wrapper">
+                <p>fill in your personal information in fields below to proceed.</p>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Name:*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mobile:*</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email Address:*</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="form-group m-0">
+                        <input type="submit" value="Start Chat">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container-fluid">
             <nav class="menu d-flex justify-content-between align-items-center">
-                <a class="logo" href="#">
-                    <img src="img/logo.png" alt="" class='img-fluid'>
+                <a class="logo" href="index.html">
+                    <img src="img/logo.png" alt="">
                 </a>
                 <ul class="links capital-text d-flex align-items-center">
                     <li class="item active">
@@ -34,28 +66,30 @@
                         <a class="link" href="rent.html">rent</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="buy.html">Buy Property</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="sell.html">Sell</a>
+                        <a class="link" href="buy.html">Buy</a>
                     </li>
                     <li class="item">
                         <a class="link" href="off-plan.html">Off Plan</a>
                     </li>
                     <li class="item">
+                        <a class="link" href="sell.html">Sell Or Lease</a>
+                    </li>
+                    <li class="item">
                         <a class="link" href="manage.html">Property Management</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="about.html">About</a>
+                        <a class="link" href="blog.html">Blog</a>
                     </li>
-                    <li class="item">
-                        <a class="link" href="blog.html">Media</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="careers.html">Careers</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="contact.html">Contact Us</a>
+                    <li class="item dropdown-about">
+                        <a href="about.html" class="link">About Us</a>
+                        <i class='fas fa-sort-down'></i>
+
+                        <div class="submenu">
+                            <a class="link d-block" href="media.html">Media</a>
+                            <a class="link d-block" href="team.html">Our Team</a>
+                            <a class="link d-block" href="careers.html">Careers</a>
+                            <a class="link d-block" href="contact.html">Contact Us</a>
+                        </div>
                     </li>
                 </ul>
                 <div class="social-links d-flex">
@@ -85,340 +119,678 @@
         </div>
     </header>
     <div class="banner">
-        <div class="bg">
-            <img src="img/banner.jpg" alt="" class='img-fluid'>
+        <div class="banner-slider">
+            <div class="item">
+                <div class="bg">
+                    <img src="img/banner.jpg" alt="" class='img-fluid'>
+                </div>
+            </div>
+            <div class="item">
+                <div class="bg">
+                    <img src="img/banner.jpg" alt="" class='img-fluid'>
+                </div>
+            </div>
         </div>
         <div class="form-area">
-            <form action="">
-                <div class="row m-0">
-                    <div class="col-md-5 col-sm-3 p-0">
-                        <div class="form-group">
-                            <i class="fas fa-angle-down"></i>
-                            <select class="form-control capital-text">
-                                <option value="rent">rent</option>
-                                <option value="test">test</option>
-                                <option value="">test</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-9 p-0">
-                        <div class="form-group">
-                            <i class="fas fa-search"></i>
-                            <input type='search' class="form-control capital-text search-bar" placeholder='City Or Community Or Tower'>
-                        </div>
-                    </div>
-                    <div class="col-md-1 p-0 d-md-block d-none">
-                        <div class="form-group">
-                            <button class='submit-btn form-control capital-text' type="submit">find</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row m-0">
-                    <div class="col-lg-5 p-0">
-                        <div class="row m-0">
-                            <div class="col-6 p-0">
-                                <div class="form-group">
-                                    <i class="fas fa-angle-down"></i>
-                                    <select class="form-control capital-text">
-                                        <option value="property">property type</option>
-                                        <option value="test">test</option>
-                                        <option value="test">test</option>
-                                    </select>
-                                </div>
+            <div class='form-wrapper'>
+                <form action="">
+                    <div class="row m-0">
+                        <div class="col-md-5 col-sm-3 p-0">
+                            <div class="form-group">
+                                <i class="fas fa-angle-down"></i>
+                                <select class="form-control capital-text">
+                                    <option value="rent">rent</option>
+                                    <option value="test">test</option>
+                                    <option value="">test</option>
+                                </select>
                             </div>
-                            <div class="col-6 p-0">
-                                <div class="form-group">
-                                    <i class="fas fa-angle-down"></i>
-                                    <select class="form-control capital-text">
-                                        <option value="property">Yearly</option>
-                                        <option value="test">test</option>
-                                        <option value="test">test</option>
-                                    </select>
-                                </div>
+                        </div>
+                        <div class="col-md-6 col-sm-9 p-0">
+                            <div class="form-group">
+                                <i class="fas fa-search"></i>
+                                <input type='search' class="form-control capital-text search-bar"
+                                    placeholder='City Or Community Or Tower'>
+                            </div>
+                        </div>
+                        <div class="col-md-1 p-0 d-md-block d-none">
+                            <div class="form-group">
+                                <button class='submit-btn form-control capital-text' type="submit">find</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7 p-0">
-                        <div class="row m-0">
-                            <div class="col-md-3 col-6 p-0">
-                                <div class="form-group">
-                                    <i class="fas fa-angle-down"></i>
-                                    <select class="form-control capital-text">
-                                        <option value="price">Min.Price</option>
-                                        <option value="test">test</option>
-                                        <option value="test">test</option>
-                                    </select>
+                    <div class="row m-0">
+                        <div class="col-lg-5 p-0">
+                            <div class="row m-0">
+                                <div class="col-6 p-0">
+                                    <div class="form-group">
+                                        <i class="fas fa-angle-down"></i>
+                                        <select class="form-control capital-text">
+                                            <option value="property">property type</option>
+                                            <option value="test">test</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3 col-6 p-0">
-                                <div class="form-group">
-                                    <i class="fas fa-angle-down"></i>
-                                    <select class="form-control capital-text">
-                                        <option value="price">Max.Price</option>
-                                        <option value="test">test</option>
-                                        <option value="test">test</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 p-0">
-                                <div class="form-group">
-                                    <i class="fas fa-angle-down"></i>
-                                    <select class="form-control capital-text">
-                                        <option value="test">min.bed</option>
-                                        <option value="test">test</option>
-                                        <option value="test">test</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-6 p-0">
-                                <div class="form-group">
-                                    <i class="fas fa-angle-down"></i>
-                                    <select class="form-control capital-text">
-                                        <option value="test">Max.bed</option>
-                                        <option value="test">test</option>
-                                        <option value="test">test</option>
-                                    </select>
+                                <div class="col-6 p-0">
+                                    <div class="form-group">
+                                        <i class="fas fa-angle-down"></i>
+                                        <select class="form-control capital-text">
+                                            <option value="property">Yearly</option>
+                                            <option value="test">test</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row m-0">
-                    <div class="col-lg-5 p-0">
-                        <div class="row m-0">
-                            <div class="col-6 p-0">
-                                <div class="form-group mb-lg-0">
-                                    <i class="fas fa-angle-down"></i>
-                                    <select class="form-control capital-text">
-                                        <option value="test">Min.area</option>
-                                        <option value="test">test</option>
-                                        <option value="test">test</option>
-                                    </select>
+                        <div class="col-lg-7 p-0">
+                            <div class="row m-0">
+                                <div class="col-md-3 col-6 p-0">
+                                    <div class="form-group">
+                                        <i class="fas fa-angle-down"></i>
+                                        <select class="form-control capital-text">
+                                            <option value="price">Min.Price</option>
+                                            <option value="test">test</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-6 p-0">
-                                <div class="form-group mb-lg-0">
-                                    <i class="fas fa-angle-down"></i>
-                                    <select class="form-control capital-text">
-                                        <option value="test">Max.area</option>
-                                        <option value="test">test</option>
-                                        <option value="test">test</option>
-                                    </select>
+                                <div class="col-md-3 col-6 p-0">
+                                    <div class="form-group">
+                                        <i class="fas fa-angle-down"></i>
+                                        <select class="form-control capital-text">
+                                            <option value="price">Max.Price</option>
+                                            <option value="test">test</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6 p-0">
+                                    <div class="form-group">
+                                        <i class="fas fa-angle-down"></i>
+                                        <select class="form-control capital-text">
+                                            <option value="test">min.bed</option>
+                                            <option value="test">test</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6 p-0">
+                                    <div class="form-group">
+                                        <i class="fas fa-angle-down"></i>
+                                        <select class="form-control capital-text">
+                                            <option value="test">Max.bed</option>
+                                            <option value="test">test</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7 p-0">
-                        <div class="row m-0">
-                            <div class="col-lg-4 col-sm-6 p-0">
-                                <div class="form-group mb-lg-0">
-                                    <i class="fas fa-angle-down"></i>
-                                    <select class="form-control capital-text">
-                                        <option value="test">All Furnishings</option>
-                                        <option value="test">test</option>
-                                        <option value="test">test</option>
-                                    </select>
+                    <div class="row m-0">
+                        <div class="col-lg-5 p-0">
+                            <div class="row m-0">
+                                <div class="col-6 p-0">
+                                    <div class="form-group mb-lg-0">
+                                        <i class="fas fa-angle-down"></i>
+                                        <select class="form-control capital-text">
+                                            <option value="test">Min.area</option>
+                                            <option value="test">test</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 p-0">
+                                    <div class="form-group mb-lg-0">
+                                        <i class="fas fa-angle-down"></i>
+                                        <select class="form-control capital-text">
+                                            <option value="test">Max.area</option>
+                                            <option value="test">test</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-6 p-0">
-                                <div class="form-group mb-lg-0">
-                                    <i class="fas fa-angle-down"></i>
-                                    <select class="form-control capital-text">
-                                        <option value="test">Amenities</option>
-                                        <option value="test">test</option>
-                                        <option value="test">test</option>
-                                    </select>
+                        </div>
+                        <div class="col-lg-7 p-0">
+                            <div class="row m-0">
+                                <div class="col-lg-4 col-sm-6 p-0">
+                                    <div class="form-group mb-lg-0">
+                                        <i class="fas fa-angle-down"></i>
+                                        <select class="form-control capital-text">
+                                            <option value="test">All Furnishings</option>
+                                            <option value="test">test</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 p-0">
-                                <div class="form-group mb-lg-0">
-                                    <input type="text" class='form-control capital-text' placeholder='Keywords'>
-                                </div>
-                            </div>
-                            <div class="col-md-1 p-0 d-block d-md-none">
-                                <div class="form-group">
-                                    <button class='submit-btn form-control capital-text' type="submit">find</button>
+                                <!-- <div class="col-lg-4 col-sm-6 p-0">
+                                    <div class="form-group mb-lg-0">
+                                        <i class="fas fa-angle-down"></i>
+                                        <select class="form-control capital-text">
+                                            <option value="test">Amenities</option>
+                                            <option value="test">test</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="col-lg-4 p-0">
+                                    <div class="form-group mb-lg-0">
+                                        <input type="text" class='form-control capital-text' placeholder='Keywords'>
+                                    </div>
+                                </div> -->
+                                <div class="col-md-1 p-0 d-block d-md-none">
+                                    <div class="form-group">
+                                        <button class='submit-btn form-control capital-text' type="submit">find</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 
-    <section class='home-slider'>
+    <section class='floated-slider'>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="properties-slider">
-                        <div class="item selected">
-                            <div class="item-header">
-                                <div class="title">
-                                    <i class='fa fa-home'></i>
-                                    <h3 class='capital-text'>buy</h3>
-                                </div>
-                            </div>
-                            <div class="item-body">
-                                <img src="img/slide1.png" alt="">
-                                <div class="overlay">
-                                    <p>ready to move in huge villa with parking</p>
-                                    <span><i class='fa fa-plus'></i></span>
-                                </div>
-                            </div>
-                            <div class="item-footer capital-text">
-                                <div class="box d-flex justify-content-between align-items-center">
-                                    <div class="box-row">
-                                        <div class="box-cell">
-                                            <i class="fas fa-bed"></i>
-                                            <span>bedrooms :</span>
-                                            <span class="count">3</span>
-                                        </div>
-                                        <div class="box-cell">
-                                            <i class="fa fa-bath"></i>
-                                            <span>Baths :</span>
-                                            <span class="count">2</span>
+                    <ul class="nav nav-pills align-items-center justify-content-between" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active fix-slider-issue" data-toggle="pill" href="#buy"
+                                aria-selected="true">
+                                <i class='fa fa-home mr-1'></i>Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fix-slider-issue" data-toggle="pill" href="#rent" aria-selected="false">
+                                <i class='fa fa-home mr-1'></i>Rent</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fix-slider-issue" data-toggle="pill" href="#offplan"
+                                aria-selected="false">
+                                <i class='fa fa-home mr-1'></i>offplan Projects</a>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="buy">
+                            <div class="buy-slider default-slider">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="img/slide1.png" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <p>ready to move in huge villa with parking</p>
+                                        <a href="">
+                                            <span><i class='fa fa-plus'></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="details">
+                                        <div class="box d-flex justify-content-between align-items-center">
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-bed"></i>
+                                                    <span>bedrooms :</span>
+                                                    <span class="count">3</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-bath"></i>
+                                                    <span>Baths :</span>
+                                                    <span class="count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-arrows-alt"></i>
+                                                    <span>Area :</span>
+                                                    <span class="count">1100 sq.ft</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-coins"></i>
+                                                    <span>Price :</span>
+                                                    <span class="count">1.300.000</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-row">
-                                        <div class="box-cell">
-                                            <i class="fas fa-arrows-alt"></i>
-                                            <span>Area :</span>
-                                            <span class="count">1100 sq.ft</span>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="img/slide1.png" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <p>ready to move in huge villa with parking</p>
+                                        <a href="">
+                                            <span><i class='fa fa-plus'></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="details">
+                                        <div class="box d-flex justify-content-between align-items-center">
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-bed"></i>
+                                                    <span>bedrooms :</span>
+                                                    <span class="count">3</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-bath"></i>
+                                                    <span>Baths :</span>
+                                                    <span class="count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-arrows-alt"></i>
+                                                    <span>Area :</span>
+                                                    <span class="count">1100 sq.ft</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-coins"></i>
+                                                    <span>Price :</span>
+                                                    <span class="count">1.300.000</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="box-cell">
-                                            <i class="fa fa-coins"></i>
-                                            <span>Price :</span>
-                                            <span class="count">1.300.000</span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="img/slide1.png" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <p>ready to move in huge villa with parking</p>
+                                        <a href="">
+                                            <span><i class='fa fa-plus'></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="details">
+                                        <div class="box d-flex justify-content-between align-items-center">
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-bed"></i>
+                                                    <span>bedrooms :</span>
+                                                    <span class="count">3</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-bath"></i>
+                                                    <span>Baths :</span>
+                                                    <span class="count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-arrows-alt"></i>
+                                                    <span>Area :</span>
+                                                    <span class="count">1100 sq.ft</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-coins"></i>
+                                                    <span>Price :</span>
+                                                    <span class="count">1.300.000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="img/slide1.png" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <p>ready to move in huge villa with parking</p>
+                                        <a href="">
+                                            <span><i class='fa fa-plus'></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="details">
+                                        <div class="box d-flex justify-content-between align-items-center">
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-bed"></i>
+                                                    <span>bedrooms :</span>
+                                                    <span class="count">3</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-bath"></i>
+                                                    <span>Baths :</span>
+                                                    <span class="count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-arrows-alt"></i>
+                                                    <span>Area :</span>
+                                                    <span class="count">1100 sq.ft</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-coins"></i>
+                                                    <span>Price :</span>
+                                                    <span class="count">1.300.000</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="item-header">
-                                <div class="title">
-                                    <i class="fas fa-house-damage"></i>
-                                    <h3 class='capital-text'>Rent</h3>
-                                </div>
-                            </div>
-                            <div class="item-body">
-                                <img src="img/slide2.jpg" alt="">
-                                <div class="overlay">
-                                    <p>ready to move in huge villa with parking</p>
-                                    <span><i class='fa fa-plus'></i></span>
-                                </div>
-                            </div>
-                            <div class="item-footer capital-text">
-                                <div class="box d-flex justify-content-between align-items-center">
-                                    <div class="box-row">
-                                        <div class="box-cell">
-                                            <i class="fas fa-bed"></i>
-                                            <span>Bedrooms :</span>
-                                            <span class="count">3</span>
-                                        </div>
-                                        <div class="box-cell">
-                                            <i class="fa fa-bath"></i>
-                                            <span>Baths :</span>
-                                            <span class="count">2</span>
+                        <div class="tab-pane" id="rent">
+                            <div class="rent-slider default-slider">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="img/slide1.png" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <p>ready to move in huge villa with parking</p>
+                                        <a href="">
+                                            <span><i class='fa fa-plus'></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="details">
+                                        <div class="box d-flex justify-content-between align-items-center">
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-bed"></i>
+                                                    <span>bedrooms :</span>
+                                                    <span class="count">3</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-bath"></i>
+                                                    <span>Baths :</span>
+                                                    <span class="count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-arrows-alt"></i>
+                                                    <span>Area :</span>
+                                                    <span class="count">1100 sq.ft</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-coins"></i>
+                                                    <span>Price :</span>
+                                                    <span class="count">1.300.000</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-row">
-                                        <div class="box-cell">
-                                            <i class="fas fa-arrows-alt"></i>
-                                            <span>Area :</span>
-                                            <span class="count">1100 sq.ft</span>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="img/slide1.png" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <p>ready to move in huge villa with parking</p>
+                                        <a href="">
+                                            <span><i class='fa fa-plus'></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="details">
+                                        <div class="box d-flex justify-content-between align-items-center">
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-bed"></i>
+                                                    <span>bedrooms :</span>
+                                                    <span class="count">3</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-bath"></i>
+                                                    <span>Baths :</span>
+                                                    <span class="count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-arrows-alt"></i>
+                                                    <span>Area :</span>
+                                                    <span class="count">1100 sq.ft</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-coins"></i>
+                                                    <span>Price :</span>
+                                                    <span class="count">1.300.000</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="box-cell">
-                                            <i class="fa fa-coins"></i>
-                                            <span>Price :</span>
-                                            <span class="count">1.300.000</span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="img/slide1.png" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <p>ready to move in huge villa with parking</p>
+                                        <a href="">
+                                            <span><i class='fa fa-plus'></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="details">
+                                        <div class="box d-flex justify-content-between align-items-center">
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-bed"></i>
+                                                    <span>bedrooms :</span>
+                                                    <span class="count">3</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-bath"></i>
+                                                    <span>Baths :</span>
+                                                    <span class="count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-arrows-alt"></i>
+                                                    <span>Area :</span>
+                                                    <span class="count">1100 sq.ft</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-coins"></i>
+                                                    <span>Price :</span>
+                                                    <span class="count">1.300.000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="img/slide1.png" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <p>ready to move in huge villa with parking</p>
+                                        <a href="">
+                                            <span><i class='fa fa-plus'></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="details">
+                                        <div class="box d-flex justify-content-between align-items-center">
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-bed"></i>
+                                                    <span>bedrooms :</span>
+                                                    <span class="count">3</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-bath"></i>
+                                                    <span>Baths :</span>
+                                                    <span class="count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-arrows-alt"></i>
+                                                    <span>Area :</span>
+                                                    <span class="count">1100 sq.ft</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-coins"></i>
+                                                    <span>Price :</span>
+                                                    <span class="count">1.300.000</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="item-header">
-                                <div class="title">
-                                    <i class="fas fa-igloo"></i>
-                                    <h3 class='capital-text'>Commercial</h3>
-                                </div>
-                            </div>
-                            <div class="item-body">
-                                <img src="img/slide3.jpg" alt="">
-                                <div class="overlay">
-                                    <p>ready to move in huge villa with parking</p>
-                                    <span><i class='fa fa-plus'></i></span>
-                                </div>
-                            </div>
-                            <div class="item-footer capital-text">
-                                <div class="box d-flex justify-content-between align-items-center">
-                                    <div class="box-row">
-                                        <div class="box-cell">
-                                            <i class="fas fa-bed"></i>
-                                            <span>Bedrooms :</span>
-                                            <span class="count">3</span>
-                                        </div>
-                                        <div class="box-cell">
-                                            <i class="fa fa-bath"></i>
-                                            <span>Baths :</span>
-                                            <span class="count">2</span>
+                        <div class="tab-pane" id="offplan">
+                            <div class="offplan-slider default-slider">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="img/slide1.png" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <p>ready to move in huge villa with parking</p>
+                                        <a href="">
+                                            <span><i class='fa fa-plus'></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="details">
+                                        <div class="box d-flex justify-content-between align-items-center">
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-bed"></i>
+                                                    <span>bedrooms :</span>
+                                                    <span class="count">3</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-bath"></i>
+                                                    <span>Baths :</span>
+                                                    <span class="count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-arrows-alt"></i>
+                                                    <span>Area :</span>
+                                                    <span class="count">1100 sq.ft</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-coins"></i>
+                                                    <span>Price :</span>
+                                                    <span class="count">1.300.000</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-row">
-                                        <div class="box-cell">
-                                            <i class="fas fa-arrows-alt"></i>
-                                            <span>Area :</span>
-                                            <span class="count">1100 sq.ft</span>
-                                        </div>
-                                        <div class="box-cell">
-                                            <i class="fa fa-coins"></i>
-                                            <span>Price :</span>
-                                            <span class="count">1.300.000</span>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="img/slide1.png" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <p>ready to move in huge villa with parking</p>
+                                        <a href="">
+                                            <span><i class='fa fa-plus'></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="details">
+                                        <div class="box d-flex justify-content-between align-items-center">
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-bed"></i>
+                                                    <span>bedrooms :</span>
+                                                    <span class="count">3</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-bath"></i>
+                                                    <span>Baths :</span>
+                                                    <span class="count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-arrows-alt"></i>
+                                                    <span>Area :</span>
+                                                    <span class="count">1100 sq.ft</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-coins"></i>
+                                                    <span>Price :</span>
+                                                    <span class="count">1.300.000</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-header">
-                                <div class="title">
-                                    <i class='fa fa-home'></i>
-                                    <h3 class='capital-text'>Buy</h3>
-                                </div>
-                            </div>
-                            <div class="item-body">
-                                <img src="img/slide4.jpg" alt="">
-                                <div class="overlay">
-                                    <p>ready to move in huge villa with parking</p>
-                                    <span><i class='fa fa-plus'></i></span>
-                                </div>
-                            </div>
-                            <div class="item-footer capital-text">
-                                <div class="box d-flex justify-content-between align-items-center">
-                                    <div class="box-row">
-                                        <div class="box-cell">
-                                            <i class="fas fa-bed"></i>
-                                            <span>Bedrooms :</span>
-                                            <span class="count">3</span>
-                                        </div>
-                                        <div class="box-cell">
-                                            <i class="fa fa-bath"></i>
-                                            <span>Baths :</span>
-                                            <span class="count">2</span>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="img/slide1.png" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <p>ready to move in huge villa with parking</p>
+                                        <a href="">
+                                            <span><i class='fa fa-plus'></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="details">
+                                        <div class="box d-flex justify-content-between align-items-center">
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-bed"></i>
+                                                    <span>bedrooms :</span>
+                                                    <span class="count">3</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-bath"></i>
+                                                    <span>Baths :</span>
+                                                    <span class="count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-arrows-alt"></i>
+                                                    <span>Area :</span>
+                                                    <span class="count">1100 sq.ft</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-coins"></i>
+                                                    <span>Price :</span>
+                                                    <span class="count">1.300.000</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="box-row">
-                                        <div class="box-cell">
-                                            <i class="fas fa-arrows-alt"></i>
-                                            <span>Area :</span>
-                                            <span class="count">1100 sq.ft</span>
-                                        </div>
-                                        <div class="box-cell">
-                                            <i class="fa fa-coins"></i>
-                                            <span>Price :</span>
-                                            <span class="count">1.300.000</span>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="img/slide1.png" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <p>ready to move in huge villa with parking</p>
+                                        <a href="">
+                                            <span><i class='fa fa-plus'></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="details">
+                                        <div class="box d-flex justify-content-between align-items-center">
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-bed"></i>
+                                                    <span>bedrooms :</span>
+                                                    <span class="count">3</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-bath"></i>
+                                                    <span>Baths :</span>
+                                                    <span class="count">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="box-row">
+                                                <div class="box-cell">
+                                                    <i class="fas fa-arrows-alt"></i>
+                                                    <span>Area :</span>
+                                                    <span class="count">1100 sq.ft</span>
+                                                </div>
+                                                <div class="box-cell">
+                                                    <i class="fa fa-coins"></i>
+                                                    <span>Price :</span>
+                                                    <span class="count">1.300.000</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -442,11 +814,11 @@
                 <div class="col-md-6">
                     <div class="text-container text-center capital-text">
                         <h2 class='text-main-color'>Why Sell <span>With Us ?</span></h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur 
+                        <p>Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Consequatur, a veritatis
                             cum officia unde nulla quidem exercitationem
                             nulla quidem impedit autem vitae?
-                        <span class="line-shape"></span>
+                            <span class="line-shape"></span>
                         </p>
                         <a href="about.html" class='capital-text'> See Why</a>
                     </div>
@@ -454,13 +826,15 @@
             </div>
         </div>
     </section>
-    
+
     <section class="blog-section">
         <div class="bg"></div>
         <div class="container">
             <div class="slider-area">
                 <div class="header-blog">
-                    <div class="left-side"><h2 class='upper-text'>LATELY ON BLOG</h2></div>
+                    <div class="left-side">
+                        <h2 class='upper-text'>LATELY ON BLOG</h2>
+                    </div>
                     <div class="right-side"><a href="#">View all</a></div>
                 </div>
                 <div class="blog-slider">
@@ -470,7 +844,7 @@
                                 <span class='d-block'>27</span><span class='upper-text'>AUG</span>
                             </div>
                             <div class="img mx-3">
-                                <img src="http://placehold.it/85x85" alt="">
+                                <img src="https://placehold.it/85x85" alt="">
                             </div>
                             <div class="details">
                                 <h4>blog title here</h4>
@@ -484,7 +858,7 @@
                                 <span class='d-block upper-text'>27</span><span class='upper-text'>AUG</span>
                             </div>
                             <div class="img mx-3">
-                                <img src="http://placehold.it/85x85" alt="">
+                                <img src="https://placehold.it/85x85" alt="">
                             </div>
                             <div class="details">
                                 <h4>blog title here</h4>
@@ -498,7 +872,7 @@
                                 <span class='d-block'>27</span><span class='upper-text'>AUG</span>
                             </div>
                             <div class="img mx-3">
-                                <img src="http://placehold.it/85x85" alt="">
+                                <img src="https://placehold.it/85x85" alt="">
                             </div>
                             <div class="details">
                                 <h4>blog title here</h4>
@@ -512,7 +886,7 @@
                                 <span class='d-block'>27</span><span class='upper-text'>AUG</span>
                             </div>
                             <div class="img mx-3">
-                                <img src="http://placehold.it/85x85" alt="">
+                                <img src="https://placehold.it/85x85" alt="">
                             </div>
                             <div class="details">
                                 <h4>blog title here</h4>
@@ -526,7 +900,7 @@
                                 <span class='d-block'>27</span><span class='upper-text'>AUG</span>
                             </div>
                             <div class="img mx-3">
-                                <img src="http://placehold.it/85x85" alt="">
+                                <img src="https://placehold.it/85x85" alt="">
                             </div>
                             <div class="details">
                                 <h4>blog title here</h4>
@@ -540,7 +914,7 @@
                                 <span class='d-block'>27</span><span class='upper-text'>AUG</span>
                             </div>
                             <div class="img mx-3">
-                                <img src="http://placehold.it/85x85" alt="">
+                                <img src="https://placehold.it/85x85" alt="">
                             </div>
                             <div class="details">
                                 <h4>blog title here</h4>
@@ -553,24 +927,26 @@
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section my-5">
         <div class="container">
             <div class="contact-title">
                 <p class='capital-text'>Feel free to contact us</p>
             </div>
             <div class="bg-title">
-                    <h2 class='capital-text'>Meet The Team</h2>
+                <h2 class='capital-text'>Meet The Team</h2>
             </div>
             <div class="slider-container">
                 <div class="contact-slider">
                     <div class="item d-flex justify-content-between align-items-center flex-column">
                         <div class="personal-img">
-                            <img src="http://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            <a href="">
+                                <img src="https://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            </a>
                         </div>
                         <div class="personal-name">
-                            <h4 class='capital-text text-main-color'>Agent Name</h4>
+                            <h4 class='capital-text text-main-color'><a href="">Agent Name</a></h4>
                         </div>
-                        <div class="personal-contacts text-center">
+                        <!-- <div class="personal-contacts text-center">
                             <span class='d-block'>
                                 <a href='#'>agent.name@upg.com</a>
                             </span>
@@ -581,16 +957,18 @@
                                 <a href='#'><i class="fa fa-phone"></i></a>
                                 <a href='#'><i class="far fa-envelope"></i></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="item d-flex justify-content-between align-items-center flex-column">
                         <div class="personal-img">
-                            <img src="http://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            <a href="">
+                                <img src="https://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            </a>
                         </div>
                         <div class="personal-name">
-                            <h4 class='capital-text text-main-color'>Agent Name</h4>
+                            <h4 class='capital-text text-main-color'><a href="">Agent Name</a></h4>
                         </div>
-                        <div class="personal-contacts text-center">
+                        <!-- <div class="personal-contacts text-center">
                             <span class='d-block'>
                                 <a href='#'>agent.name@upg.com</a>
                             </span>
@@ -601,16 +979,18 @@
                                 <a href='#'><i class="fa fa-phone"></i></a>
                                 <a href='#'><i class="far fa-envelope"></i></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="item d-flex justify-content-between align-items-center flex-column">
                         <div class="personal-img">
-                            <img src="http://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            <a href="">
+                                <img src="https://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            </a>
                         </div>
                         <div class="personal-name">
-                            <h4 class='capital-text text-main-color'>Agent Name</h4>
+                            <h4 class='capital-text text-main-color'><a href="">Agent Name</a></h4>
                         </div>
-                        <div class="personal-contacts text-center">
+                        <!-- <div class="personal-contacts text-center">
                             <span class='d-block'>
                                 <a href='#'>agent.name@upg.com</a>
                             </span>
@@ -621,16 +1001,18 @@
                                 <a href='#'><i class="fa fa-phone"></i></a>
                                 <a href='#'><i class="far fa-envelope"></i></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="item d-flex justify-content-between align-items-center flex-column">
                         <div class="personal-img">
-                            <img src="http://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            <a href="">
+                                <img src="https://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            </a>
                         </div>
                         <div class="personal-name">
-                            <h4 class='capital-text text-main-color'>Agent Name</h4>
+                            <h4 class='capital-text text-main-color'><a href="">Agent Name</a></h4>
                         </div>
-                        <div class="personal-contacts text-center">
+                        <!-- <div class="personal-contacts text-center">
                             <span class='d-block'>
                                 <a href='#'>agent.name@upg.com</a>
                             </span>
@@ -641,16 +1023,18 @@
                                 <a href='#'><i class="fa fa-phone"></i></a>
                                 <a href='#'><i class="far fa-envelope"></i></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="item d-flex justify-content-between align-items-center flex-column">
                         <div class="personal-img">
-                            <img src="http://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            <a href="">
+                                <img src="https://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            </a>
                         </div>
                         <div class="personal-name">
-                            <h4 class='capital-text text-main-color'>Agent Name</h4>
+                            <h4 class='capital-text text-main-color'><a href="">Agent Name</a></h4>
                         </div>
-                        <div class="personal-contacts text-center">
+                        <!-- <div class="personal-contacts text-center">
                             <span class='d-block'>
                                 <a href='#'>agent.name@upg.com</a>
                             </span>
@@ -661,16 +1045,18 @@
                                 <a href='#'><i class="fa fa-phone"></i></a>
                                 <a href='#'><i class="far fa-envelope"></i></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="item d-flex justify-content-between align-items-center flex-column">
                         <div class="personal-img">
-                            <img src="http://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            <a href="">
+                                <img src="https://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            </a>
                         </div>
                         <div class="personal-name">
-                            <h4 class='capital-text text-main-color'>Agent Name</h4>
+                            <h4 class='capital-text text-main-color'><a href="">Agent Name</a></h4>
                         </div>
-                        <div class="personal-contacts text-center">
+                        <!-- <div class="personal-contacts text-center">
                             <span class='d-block'>
                                 <a href='#'>agent.name@upg.com</a>
                             </span>
@@ -681,16 +1067,18 @@
                                 <a href='#'><i class="fa fa-phone"></i></a>
                                 <a href='#'><i class="far fa-envelope"></i></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="item d-flex justify-content-between align-items-center flex-column">
                         <div class="personal-img">
-                            <img src="http://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            <a href="">
+                                <img src="https://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            </a>
                         </div>
                         <div class="personal-name">
-                            <h4 class='capital-text text-main-color'>Agent Name</h4>
+                            <h4 class='capital-text text-main-color'><a href="">Agent Name</a></h4>
                         </div>
-                        <div class="personal-contacts text-center">
+                        <!-- <div class="personal-contacts text-center">
                             <span class='d-block'>
                                 <a href='#'>agent.name@upg.com</a>
                             </span>
@@ -701,16 +1089,18 @@
                                 <a href='#'><i class="fa fa-phone"></i></a>
                                 <a href='#'><i class="far fa-envelope"></i></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="item d-flex justify-content-between align-items-center flex-column">
                         <div class="personal-img">
-                            <img src="http://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            <a href="">
+                                <img src="https://placehold.it/200x200" class='rounded-circle img-fluid' alt="">
+                            </a>
                         </div>
                         <div class="personal-name">
-                            <h4 class='capital-text text-main-color'>Agent Name</h4>
+                            <h4 class='capital-text text-main-color'><a href="">Agent Name</a></h4>
                         </div>
-                        <div class="personal-contacts text-center">
+                        <!-- <div class="personal-contacts text-center">
                             <span class='d-block'>
                                 <a href='#'>agent.name@upg.com</a>
                             </span>
@@ -721,7 +1111,42 @@
                                 <a href='#'><i class="fa fa-phone"></i></a>
                                 <a href='#'><i class="far fa-envelope"></i></a>
                             </div>
-                        </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="developers my-5">
+        <div class="container">
+            <div class="dev-title">
+                <h2 class="text-capitalize">developers</h2>
+            </div>
+            <div class="dev-slider">
+                <div class="item">
+                    <div class="img-dev">
+                        <img src="https://placehold.it/150x150" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-dev">
+                        <img src="https://placehold.it/150x150" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-dev">
+                        <img src="https://placehold.it/150x150" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-dev">
+                        <img src="https://placehold.it/150x150" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-dev">
+                        <img src="https://placehold.it/150x150" alt="">
                     </div>
                 </div>
             </div>
@@ -790,14 +1215,23 @@
             <div class="row">
                 <div class="col-12">
                     <div class="img">
-                        <img src='http://placehold.it/80x80' alt=''>
+                        <img src='img/logo.png' alt=''>
                     </div>
                 </div>
                 <div class="col-12">
-                    <p class='footer-text'>Lorem ipsum, dolor sit amet consectetur adipisicing dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Architecto dolor sit amet consectetur dolor sit amet consectetur adipisicing elit. Architecto dolor sit amet consectetur adipisicing elit. Architecto adipisicing elit. Architecto Architecto elit. Architecto dolor sit amet consectetur adipisicing elit. Architecto nostrum quibusdam, qui eum totam aspernatur nemo? Autem ad voluptatibus sunt rerum tenetur voluptatem possimus, id quas illum dolor ullam nihil, optio dolores aliquam distinctio officia deserunt. Doloribus fuga aspernatur quas atque at accusantium architecto explicabo, molestiae natus eligendi minima porro.</p>
+                    <p class='footer-text'>Lorem ipsum, dolor sit amet consectetur adipisicing dolor sit amet
+                        consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Architecto dolor sit
+                        amet consectetur dolor sit amet consectetur adipisicing elit. Architecto dolor sit amet
+                        consectetur adipisicing elit. Architecto adipisicing elit. Architecto Architecto elit.
+                        Architecto dolor sit amet consectetur adipisicing elit. Architecto nostrum quibusdam, qui eum
+                        totam aspernatur nemo? Autem ad voluptatibus sunt rerum tenetur voluptatem possimus, id quas
+                        illum dolor ullam nihil, optio dolores aliquam distinctio officia deserunt. Doloribus fuga
+                        aspernatur quas atque at accusantium architecto explicabo, molestiae natus eligendi minima
+                        porro.</p>
                 </div>
                 <div class="col-12">
-                    <p class='copyrights'> &copy; 2019 United Gulf Properties, All Rights Reserved Powered By <a href='http://v2.icons-agency.com/en-eg' target='_blank' class='icons-webpage'>ICONS</a></p>
+                    <p class='copyrights'> &copy; 2019 United Gulf Properties, All Rights Reserved Powered By <a
+                            href='http://v2.icons-agency.com/en-eg' target='_blank' class='icons-webpage'>ICONS</a></p>
                 </div>
             </div>
         </div>
@@ -815,7 +1249,17 @@
     <script src="js/select2.min.js"></script>
     <script src='js/custom.js'></script>
     <script>
-        $('.properties-slider').slick({
+        $('.banner-slider').slick({
+            autoplay: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            pauseOnHover: false,
+            arrows: true,
+            cssEase: "linear",
+            prevArrow: '<button class="PrevArrow"></button>',
+            nextArrow: '<button class="NextArrow"></button>',
+        });
+        $('.buy-slider').slick({
             autoplay: true,
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -826,16 +1270,64 @@
             nextArrow: '<button class="NextArrow"></button>',
             responsive: [
                 {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                }
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    }
                 },
                 {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    }
                 }
+            ]
+        });
+        $('.rent-slider').slick({
+            autoplay: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            pauseOnHover: false,
+            arrows: true,
+            cssEase: "linear",
+            prevArrow: '<button class="PrevArrow"></button>',
+            nextArrow: '<button class="NextArrow"></button>',
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+        $('.offplan-slider').slick({
+            autoplay: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            pauseOnHover: false,
+            arrows: true,
+            cssEase: "linear",
+            prevArrow: '<button class="PrevArrow"></button>',
+            nextArrow: '<button class="NextArrow"></button>',
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    }
                 }
             ]
         });
@@ -851,12 +1343,26 @@
             cssEase: "linear",
             prevArrow: '<button class="PrevArrow"></button>',
             nextArrow: '<button class="NextArrow"></button>',
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        rows: 1,
+                        slidesToShow: 1,
+                    }
+                }
+            ]
         });
 
         $('.contact-slider').slick({
             autoplay: true,
-            rows: 2,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             pauseOnHover: false,
             arrows: true,
@@ -865,21 +1371,62 @@
             nextArrow: '<button class="NextArrow"></button>',
             responsive: [
                 {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                }
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                    }
                 },
                 {
-                breakpoint: 767,
-                settings: {
-                    rows: 1,
-                    slidesToShow: 1,
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        rows: 1,
+                        slidesToShow: 1,
+                    }
                 }
+            ]
+        });
+        $('.dev-slider').slick({
+            autoplay: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            pauseOnHover: false,
+            arrows: true,
+            cssEase: "linear",
+            prevArrow: '<button class="PrevArrow"></button>',
+            nextArrow: '<button class="NextArrow"></button>',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        rows: 1,
+                        slidesToShow: 1,
+                    }
                 }
             ]
         });
 
+        $(".fix-slider-issue").click(function (e) {
+            e.preventDefault();
+            $('.default-slider').slick('refresh');
+        });
     </script>
 </body>
 

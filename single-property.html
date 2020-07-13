@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="vendors/bootstrap.css">
     <link rel="stylesheet" href="vendors/pace-theme-minimal.css">
     <link rel="stylesheet" href="vendors/slick.css">
-    <link rel="stylesheet" href="vendors/select2.css"/>
+    <link rel="stylesheet" href="vendors/select2.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -19,42 +19,74 @@
 </head>
 
 <body>
+    <div class="chat-with-us">
+        <div class="icon">
+            <i class="far fa-comment-dots"></i>
+            <!-- <i class="fas fa-chevron-down"></i> -->
+        </div>
+        <span>Need Help?</span>
+        <div class="chat-box">
+            <h3>Need Help?</h3>
+            <div class="wrapper">
+                <p>fill in your personal information in fields below to proceed.</p>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Name:*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mobile:*</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email Address:*</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="form-group m-0">
+                        <input type="submit" value="Start Chat">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container-fluid">
             <nav class="menu d-flex justify-content-between align-items-center">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                     <img src="img/logo.png" alt="" class='img-fluid'>
                 </a>
-                <ul class="links d-flex align-items-center">
+                <ul class="links capital-text d-flex align-items-center">
                     <li class="item active">
-                        <a class="link" href="index.html">Home</a>
+                        <a class="link" href="index.html">home</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="rent.html">Rent</a>
+                        <a class="link" href="rent.html">rent</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="buy.html">Buy Property</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="sell.html">Sell</a>
+                        <a class="link" href="buy.html">Buy</a>
                     </li>
                     <li class="item">
                         <a class="link" href="off-plan.html">Off Plan</a>
                     </li>
                     <li class="item">
+                        <a class="link" href="sell.html">Sell Or Lease</a>
+                    </li>
+                    <li class="item">
                         <a class="link" href="manage.html">Property Management</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="about.html">About</a>
+                        <a class="link" href="blog.html">Blog</a>
                     </li>
-                    <li class="item">
-                        <a class="link" href="blog.html">Media</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="careers.html">Careers</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="contact.html">Contact Us</a>
+                    <li class="item dropdown-about">
+                        <a href="about.html" class="link">About Us</a>
+                        <i class='fas fa-sort-down'></i>
+
+                        <div class="submenu">
+                            <a class="link d-block" href="media.html">Media</a>
+                            <a class="link d-block" href="team.html">Our Team</a>
+                            <a class="link d-block" href="careers.html">Careers</a>
+                            <a class="link d-block" href="contact.html">Contact Us</a>
+                        </div>
                     </li>
                 </ul>
                 <div class="social-links d-flex">
@@ -64,14 +96,14 @@
                     <a class="link" href="#"><i class="fab fa-twitter"></i></a>
                     <a class="link" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="lang">
+                <div class="lang capital-text">
                     <a class="link" href="#">En</a>
                     <i class='fas fa-sort-down'></i>
                     <ul class='submenu'>
                         <li class='arabic-lang'><a href='#'>Ar</a></li>
                     </ul>
                 </div>
-                <div class="log">
+                <div class="log capital-text">
                     <img class='log-img' src="img/log-icon.png" alt="">
                     <a class="link" href="sign-in.html">sign in</a>
                 </div>
@@ -89,22 +121,22 @@
             <h1 class="title capital-text">Property Description</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="#">city</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <i class="fas fa-arrow-right"></i>
-                    <a href="#">place</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <i class="fas fa-arrow-right"></i>
-                    <a href="#">area</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <i class="fas fa-arrow-right"></i>
-                    <a href="#">feature</a>
-                </li>
-            </ol>
+                    <li class="breadcrumb-item">
+                        <a href="#">city</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <i class="fas fa-arrow-right"></i>
+                        <a href="#">place</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <i class="fas fa-arrow-right"></i>
+                        <a href="#">area</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <i class="fas fa-arrow-right"></i>
+                        <a href="#">feature</a>
+                    </li>
+                </ol>
             </nav>
         </div>
     </section>
@@ -208,23 +240,28 @@
                                     <h3 class="desc-title text-main-color">description</h3>
                                     <div class="desc">
                                         <h6 class='title'>about property</h6>
-                                        <p class='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ad veniam molestias laborum, voluptatum possimus.</p>
+                                        <p class='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                            ad veniam molestias laborum, voluptatum possimus.</p>
                                     </div>
                                     <div class="desc">
                                         <h6 class='title'>about property</h6>
-                                        <p class='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ad veniam molestias laborum, voluptatum possimus.</p>
+                                        <p class='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                            ad veniam molestias laborum, voluptatum possimus.</p>
                                     </div>
                                     <div class="desc">
                                         <h6 class='title'>about property</h6>
-                                        <p class='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ad veniam molestias laborum, voluptatum possimus.</p>
+                                        <p class='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                            ad veniam molestias laborum, voluptatum possimus.</p>
                                     </div>
                                     <div class="desc">
                                         <h6 class='title'>about property</h6>
-                                        <p class='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ad veniam molestias laborum, voluptatum possimus.</p>
+                                        <p class='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                            ad veniam molestias laborum, voluptatum possimus.</p>
                                     </div>
                                     <div class="desc">
                                         <h6 class='title'>about property</h6>
-                                        <p class='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ad veniam molestias laborum, voluptatum possimus.</p>
+                                        <p class='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                            ad veniam molestias laborum, voluptatum possimus.</p>
                                     </div>
                                 </div>
                             </div>
@@ -242,7 +279,8 @@
                                         <div class="col-12 p-0">
                                             <div class="form-group">
                                                 <i class="fas fa-search"></i>
-                                                <input class='form-control capital-text search-bar' type='search' placeholder='property search'>
+                                                <input class='form-control capital-text search-bar' type='search'
+                                                    placeholder='property search'>
                                             </div>
                                         </div>
                                         <div class="col-12 p-0">
@@ -302,7 +340,8 @@
                                     <div class="contact-slider">
                                         <div class="item d-flex justify-content-between align-items-center flex-column">
                                             <div class="personal-img">
-                                                <img src="http://placehold.it/120x120" class='rounded-circle img-fluid' alt="">
+                                                <img src="http://placehold.it/120x120" class='rounded-circle img-fluid'
+                                                    alt="">
                                             </div>
                                             <div class="personal-name">
                                                 <h4 class='capital-text'>Agent Name</h4>
@@ -317,7 +356,8 @@
                                         </div>
                                         <div class="item d-flex justify-content-between align-items-center flex-column">
                                             <div class="personal-img">
-                                                <img src="http://placehold.it/120x120" class='rounded-circle img-fluid' alt="">
+                                                <img src="http://placehold.it/120x120" class='rounded-circle img-fluid'
+                                                    alt="">
                                             </div>
                                             <div class="personal-name">
                                                 <h4 class='capital-text'>Agent Name</h4>
@@ -332,7 +372,8 @@
                                         </div>
                                         <div class="item d-flex justify-content-between align-items-center flex-column">
                                             <div class="personal-img">
-                                                <img src="http://placehold.it/120x120" class='rounded-circle img-fluid' alt="">
+                                                <img src="http://placehold.it/120x120" class='rounded-circle img-fluid'
+                                                    alt="">
                                             </div>
                                             <div class="personal-name">
                                                 <h4 class='capital-text'>Agent Name</h4>
@@ -347,7 +388,8 @@
                                         </div>
                                         <div class="item d-flex justify-content-between align-items-center flex-column">
                                             <div class="personal-img">
-                                                <img src="http://placehold.it/120x120" class='rounded-circle img-fluid' alt="">
+                                                <img src="http://placehold.it/120x120" class='rounded-circle img-fluid'
+                                                    alt="">
                                             </div>
                                             <div class="personal-name">
                                                 <h4 class='capital-text'>Agent Name</h4>
@@ -362,7 +404,8 @@
                                         </div>
                                         <div class="item d-flex justify-content-between align-items-center flex-column">
                                             <div class="personal-img">
-                                                <img src="http://placehold.it/120x120" class='rounded-circle img-fluid' alt="">
+                                                <img src="http://placehold.it/120x120" class='rounded-circle img-fluid'
+                                                    alt="">
                                             </div>
                                             <div class="personal-name">
                                                 <h4 class='capital-text'>Agent Name</h4>
@@ -377,7 +420,8 @@
                                         </div>
                                         <div class="item d-flex justify-content-between align-items-center flex-column">
                                             <div class="personal-img">
-                                                <img src="http://placehold.it/120x120" class='rounded-circle img-fluid' alt="">
+                                                <img src="http://placehold.it/120x120" class='rounded-circle img-fluid'
+                                                    alt="">
                                             </div>
                                             <div class="personal-name">
                                                 <h4 class='capital-text'>Agent Name</h4>
@@ -441,7 +485,9 @@
     </section>
 
     <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.9244625133324!2d54.37115431423825!3d24.488073984230923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e664377536071%3A0x1b6706ea84dd1552!2sUnited%20Gulf%20Properties%20l%20Trusted%20Realtor!5e0!3m2!1sen!2seg!4v1567082747250!5m2!1sen!2seg" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.9244625133324!2d54.37115431423825!3d24.488073984230923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e664377536071%3A0x1b6706ea84dd1552!2sUnited%20Gulf%20Properties%20l%20Trusted%20Realtor!5e0!3m2!1sen!2seg!4v1567082747250!5m2!1sen!2seg"
+            width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </section>
 
     <section class="related py-5">
@@ -482,7 +528,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5 p-0">
                     <div class="prop capital-text">
@@ -516,7 +562,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5 p-0">
                     <div class="prop capital-text">
@@ -550,7 +596,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5 p-0">
                     <div class="prop capital-text">
@@ -584,7 +630,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </div>
@@ -652,14 +698,23 @@
             <div class="row">
                 <div class="col-12">
                     <div class="img">
-                        <img src='http://placehold.it/80x80' alt=''>
+                        <img src='img/logo.png' alt=''>
                     </div>
                 </div>
                 <div class="col-12">
-                    <p class='footer-text'>Lorem ipsum, dolor sit amet consectetur adipisicing dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Architecto dolor sit amet consectetur dolor sit amet consectetur adipisicing elit. Architecto dolor sit amet consectetur adipisicing elit. Architecto adipisicing elit. Architecto Architecto elit. Architecto dolor sit amet consectetur adipisicing elit. Architecto nostrum quibusdam, qui eum totam aspernatur nemo? Autem ad voluptatibus sunt rerum tenetur voluptatem possimus, id quas illum dolor ullam nihil, optio dolores aliquam distinctio officia deserunt. Doloribus fuga aspernatur quas atque at accusantium architecto explicabo, molestiae natus eligendi minima porro.</p>
+                    <p class='footer-text'>Lorem ipsum, dolor sit amet consectetur adipisicing dolor sit amet
+                        consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Architecto dolor sit
+                        amet consectetur dolor sit amet consectetur adipisicing elit. Architecto dolor sit amet
+                        consectetur adipisicing elit. Architecto adipisicing elit. Architecto Architecto elit.
+                        Architecto dolor sit amet consectetur adipisicing elit. Architecto nostrum quibusdam, qui eum
+                        totam aspernatur nemo? Autem ad voluptatibus sunt rerum tenetur voluptatem possimus, id quas
+                        illum dolor ullam nihil, optio dolores aliquam distinctio officia deserunt. Doloribus fuga
+                        aspernatur quas atque at accusantium architecto explicabo, molestiae natus eligendi minima
+                        porro.</p>
                 </div>
                 <div class="col-12">
-                    <p class='copyrights'> &copy; 2019 United Gulf Properties, All Rights Reserved Powered By <a href='http://v2.icons-agency.com/en-eg' target='_blank' class='icons-webpage'>ICONS</a></p>
+                    <p class='copyrights'> &copy; 2019 United Gulf Properties, All Rights Reserved Powered By <a
+                            href='http://v2.icons-agency.com/en-eg' target='_blank' class='icons-webpage'>ICONS</a></p>
                 </div>
             </div>
         </div>
@@ -678,36 +733,36 @@
     <script src='js/custom.js'></script>
 
     <script>
-  
+
         $('.slider-for').slick({
-        autoplay: true,
-        speed: 1500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: false,
-        asNavFor: '.slider-nav',
-        prevArrow: '<button class="PrevArrow"></button>',
-        nextArrow: '<button class="NextArrow"></button>'
+            autoplay: true,
+            speed: 1500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            asNavFor: '.slider-nav',
+            prevArrow: '<button class="PrevArrow"></button>',
+            nextArrow: '<button class="NextArrow"></button>'
         });
         $('.slider-nav').slick({
-        autoplay: true,
-        speed: 1500,
-        vertical: true,
-        verticalSwiping: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        arrows: true,
-        dots: false,
-        prevArrow: '.controllers .prev',
-        nextArrow: '.controllers .next',
-        responsive: [
-            {
-                breakpoint: 767,
-                settings: {
-                    vertical: false,
-                }
+            autoplay: true,
+            speed: 1500,
+            vertical: true,
+            verticalSwiping: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            arrows: true,
+            dots: false,
+            prevArrow: '.controllers .prev',
+            nextArrow: '.controllers .next',
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        vertical: false,
+                    }
                 }
             ]
         });

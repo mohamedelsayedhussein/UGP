@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,17 +14,47 @@
     <link rel="stylesheet" href="vendors/pace-theme-minimal.css">
     <link rel="stylesheet" href="vendors/multirange.css">
     <link rel="stylesheet" href="vendors/slick.css">
-    <link rel="stylesheet" href="vendors/select2.css"/>
+    <link rel="stylesheet" href="vendors/select2.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
+    <div class="chat-with-us">
+        <div class="icon">
+            <i class="far fa-comment-dots"></i>
+            <!-- <i class="fas fa-chevron-down"></i> -->
+        </div>
+        <span>Need Help?</span>
+        <div class="chat-box">
+            <h3>Need Help?</h3>
+            <div class="wrapper">
+                <p>fill in your personal information in fields below to proceed.</p>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Name:*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mobile:*</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email Address:*</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="form-group m-0">
+                        <input type="submit" value="Start Chat">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container-fluid">
             <nav class="menu d-flex justify-content-between align-items-center">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                     <img src="img/logo.png" alt="" class='img-fluid'>
                 </a>
                 <ul class="links capital-text d-flex align-items-center">
@@ -36,28 +65,30 @@
                         <a class="link" href="rent.html">rent</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="buy.html">Buy Property</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="sell.html">Sell</a>
+                        <a class="link" href="buy.html">Buy</a>
                     </li>
                     <li class="item">
                         <a class="link" href="off-plan.html">Off Plan</a>
                     </li>
                     <li class="item">
+                        <a class="link" href="sell.html">Sell Or Lease</a>
+                    </li>
+                    <li class="item">
                         <a class="link" href="manage.html">Property Management</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="about.html">About</a>
+                        <a class="link" href="blog.html">Blog</a>
                     </li>
-                    <li class="item">
-                        <a class="link" href="blog.html">Media</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="careers.html">Careers</a>
-                    </li>
-                    <li class="item">
-                        <a class="link" href="contact.html">Contact Us</a>
+                    <li class="item dropdown-about">
+                        <a href="about.html" class="link">About Us</a>
+                        <i class='fas fa-sort-down'></i>
+
+                        <div class="submenu">
+                            <a class="link d-block" href="media.html">Media</a>
+                            <a class="link d-block" href="team.html">Our Team</a>
+                            <a class="link d-block" href="careers.html">Careers</a>
+                            <a class="link d-block" href="contact.html">Contact Us</a>
+                        </div>
                     </li>
                 </ul>
                 <div class="social-links d-flex">
@@ -90,7 +121,7 @@
     <section class="head_banner">
         <h1 class="title capital-text m-0">residental rent units</h1>
     </section>
-    
+
     <section class="our-properties">
         <div class="container">
             <div class="row m-0 pt-5">
@@ -120,7 +151,8 @@
                         <div class="col-xl-4 col-md-6 mb-lg-5 mb-3 p-0">
                             <div class="prop capital-text">
                                 <div class="item-header">
-                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid' alt=""></a>
+                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid'
+                                            alt=""></a>
                                 </div>
                                 <div class="item-body capital-text">
                                     <h4><a href="single-property.html">AED 57.000 <span>per year</span></a></h4>
@@ -149,12 +181,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>                    
+                            </div>
                         </div>
                         <div class="col-xl-4 col-md-6 mb-lg-5 mb-3 p-0">
                             <div class="prop capital-text">
                                 <div class="item-header">
-                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid' alt=""></a>
+                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid'
+                                            alt=""></a>
                                 </div>
                                 <div class="item-body capital-text">
                                     <h4><a href="single-property.html">AED 57.000 <span>per year</span></a></h4>
@@ -183,12 +216,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>    
+                            </div>
                         </div>
                         <div class="col-xl-4 col-md-6 mb-lg-5 mb-3 p-0">
                             <div class="prop capital-text">
                                 <div class="item-header">
-                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid' alt=""></a>
+                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid'
+                                            alt=""></a>
                                 </div>
                                 <div class="item-body capital-text">
                                     <h4><a href="single-property.html">AED 57.000 <span>per year</span></a></h4>
@@ -217,12 +251,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>    
+                            </div>
                         </div>
                         <div class="col-xl-4 col-md-6 mb-lg-5 mb-3 p-0">
                             <div class="prop capital-text">
                                 <div class="item-header">
-                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid' alt=""></a>
+                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid'
+                                            alt=""></a>
                                 </div>
                                 <div class="item-body capital-text">
                                     <h4><a href="single-property.html">AED 57.000 <span>per year</span></a></h4>
@@ -251,12 +286,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>    
+                            </div>
                         </div>
                         <div class="col-xl-4 col-md-6 mb-lg-5 mb-3 p-0">
                             <div class="prop capital-text">
                                 <div class="item-header">
-                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid' alt=""></a>
+                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid'
+                                            alt=""></a>
                                 </div>
                                 <div class="item-body capital-text">
                                     <h4><a href="single-property.html">AED 57.000 <span>per year</span></a></h4>
@@ -285,12 +321,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>    
+                            </div>
                         </div>
                         <div class="col-xl-4 col-md-6 mb-lg-5 mb-3 p-0">
                             <div class="prop capital-text">
                                 <div class="item-header">
-                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid' alt=""></a>
+                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid'
+                                            alt=""></a>
                                 </div>
                                 <div class="item-body capital-text">
                                     <h4><a href="single-property.html">AED 57.000 <span>per year</span></a></h4>
@@ -319,12 +356,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>    
+                            </div>
                         </div>
                         <div class="col-xl-4 col-md-6 mb-lg-5 mb-3 p-0">
                             <div class="prop capital-text">
                                 <div class="item-header">
-                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid' alt=""></a>
+                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid'
+                                            alt=""></a>
                                 </div>
                                 <div class="item-body capital-text">
                                     <h4><a href="single-property.html">AED 57.000 <span>per year</span></a></h4>
@@ -353,12 +391,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>    
+                            </div>
                         </div>
                         <div class="col-xl-4 col-md-6 mb-lg-5 mb-3 p-0">
                             <div class="prop capital-text">
                                 <div class="item-header">
-                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid' alt=""></a>
+                                    <a href='single-property.html'><img src="img/slide1.png" class='img-fluid'
+                                            alt=""></a>
                                 </div>
                                 <div class="item-body capital-text">
                                     <h4><a href="single-property.html">AED 57.000 <span>per year</span></a></h4>
@@ -387,7 +426,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>    
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -405,7 +444,8 @@
                                 <div class="col-12 p-0">
                                     <div class="form-group">
                                         <i class="fas fa-search"></i>
-                                        <input class='form-control capital-text search-bar' type='search' placeholder='property search'>
+                                        <input class='form-control capital-text search-bar' type='search'
+                                            placeholder='property search'>
                                     </div>
                                 </div>
                                 <div class="col-12 p-0">
@@ -543,14 +583,23 @@
             <div class="row">
                 <div class="col-12">
                     <div class="img">
-                        <img src='http://placehold.it/80x80' alt=''>
+                        <img src='img/logo.png' alt=''>
                     </div>
                 </div>
                 <div class="col-12">
-                    <p class='footer-text'>Lorem ipsum, dolor sit amet consectetur adipisicing dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Architecto dolor sit amet consectetur dolor sit amet consectetur adipisicing elit. Architecto dolor sit amet consectetur adipisicing elit. Architecto adipisicing elit. Architecto Architecto elit. Architecto dolor sit amet consectetur adipisicing elit. Architecto nostrum quibusdam, qui eum totam aspernatur nemo? Autem ad voluptatibus sunt rerum tenetur voluptatem possimus, id quas illum dolor ullam nihil, optio dolores aliquam distinctio officia deserunt. Doloribus fuga aspernatur quas atque at accusantium architecto explicabo, molestiae natus eligendi minima porro.</p>
+                    <p class='footer-text'>Lorem ipsum, dolor sit amet consectetur adipisicing dolor sit amet
+                        consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Architecto dolor sit
+                        amet consectetur dolor sit amet consectetur adipisicing elit. Architecto dolor sit amet
+                        consectetur adipisicing elit. Architecto adipisicing elit. Architecto Architecto elit.
+                        Architecto dolor sit amet consectetur adipisicing elit. Architecto nostrum quibusdam, qui eum
+                        totam aspernatur nemo? Autem ad voluptatibus sunt rerum tenetur voluptatem possimus, id quas
+                        illum dolor ullam nihil, optio dolores aliquam distinctio officia deserunt. Doloribus fuga
+                        aspernatur quas atque at accusantium architecto explicabo, molestiae natus eligendi minima
+                        porro.</p>
                 </div>
                 <div class="col-12">
-                    <p class='copyrights'> &copy; 2019 United Gulf Properties, All Rights Reserved Powered By <a href='http://v2.icons-agency.com/en-eg' target='_blank' class='icons-webpage'>ICONS</a></p>
+                    <p class='copyrights'> &copy; 2019 United Gulf Properties, All Rights Reserved Powered By <a
+                            href='http://v2.icons-agency.com/en-eg' target='_blank' class='icons-webpage'>ICONS</a></p>
                 </div>
             </div>
         </div>
