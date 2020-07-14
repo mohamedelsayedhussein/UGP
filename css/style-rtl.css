@@ -2096,9 +2096,18 @@ section.benefits .item h6 {
 }
 .teams-grid .modal-header .close {
     position: absolute;
-    top: 1rem;
-    left: 1.5rem;
+    top: 2rem;
+    left: 3rem;
     z-index: 999;
+    color: #fff;
+    background: var(--text-color);
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 1.8rem;
+    border-radius: 50%;
 }
 .teams-grid .modal-body .img {
     width: 100%;
@@ -2110,13 +2119,21 @@ section.benefits .item h6 {
     height: 100%;
     object-fit: cover;
 }
+.teams-grid .modal-body .title {
+    margin-bottom: 1rem;
+}
 .teams-grid .modal-body .title h3 {
-    color: var(--text-color);    
+    color: var(--text-color);
+    margin: .7rem 0 0;
 }
 .teams-grid .modal-body .title span {
     letter-spacing: 2px;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid rgba(0,0,0,.2);
 }
 .teams-grid .modal-body .desc p {
     color: #3d3d3d;
+    font-size: .9rem;
+    text-align: justify;
 }
