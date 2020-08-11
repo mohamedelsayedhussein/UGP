@@ -2150,3 +2150,113 @@ section.benefits .item h6 {
     font-size: .9rem;
     text-align: justify;
 }
+
+
+.special-form {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: auto;
+}
+.contact-form .img {
+    width: 100%;
+    height: 282px;
+    overflow: hidden;
+}
+.contact-form .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact-form .contact-box {
+    border: 2px solid #046a80;
+    padding: 3rem 1rem 0;
+}
+.contact-form .contact-box .form-control {
+    font-size: 0.8rem;
+    box-shadow: none !important;
+}
+.contact-form .contact-box input[type="submit"] {
+    background: #046a80;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0;
+}
+section.some-details .text-line .title {
+    color: #046a80;
+    font-size: 1.5rem;
+}
+section.some-details .text-line .subtitle {
+    color: #2baed8;
+    font-weight: normal;
+    font-size: 1rem;
+}
+section.some-details .slider,
+section.some-details .slider .item,
+section.some-details .slider .item .bg {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+section.some-details .slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.2;
+}
+section.some-details .slider .item .bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section.some-details .slider .PrevArrow,
+section.some-details .slider .NextArrow {
+    position: absolute;
+    top: 48%;
+    left: 2rem;
+    width: 50px;
+    height: 50px;
+    border-top: 12px solid #fff !important;
+    border-left: 12px solid transparent !important;
+    border-bottom: 12px solid transparent !important;
+    border-right: 12px solid #fff !important;
+    transform: rotate(-135deg);
+    z-index: 5;
+}
+section.some-details .slider .NextArrow {
+    left: auto;
+    right: 2rem;
+    border-left: 12px solid #fff !important;
+    border-right: 12px solid transparent !important;
+    transform: rotate(135deg);
+}
+@media (max-width: 767px) {
+    section.some-details .slider .PrevArrow,
+    section.some-details .slider .NextArrow {
+        width: 35px;
+        height: 35px;
+        border-width: 8px !important;
+    }
+}
+.grid-section .gallery .title {
+    color: #046a80;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+.grid-section .gallery .img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.grid-section .gallery .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
