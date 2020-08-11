@@ -377,9 +377,9 @@ header .menu .bars:hover .line {
 /* banner style */
 
 .banner {
-    height: 90vh;
-    width: 100%;
     position: relative;
+    width: 100%;
+    min-height: 90vh;
 }
 .banner .banner-slider {
     position: relative;
@@ -398,7 +398,13 @@ header .menu .bars:hover .line {
     height: 90vh;
     overflow: hidden;
 }
-
+@media (max-width: 767px) {
+    .banner .banner-slider,
+    .banner .banner-slider .item,
+    .banner .banner-slider .item .bg {
+        height: 50vh;
+    }
+}
 .banner .banner-slider .item .bg img {
     width: 100%;
     height: 100%;
@@ -433,12 +439,19 @@ header .menu .bars:hover .line {
 }
 .form-area {
     position: absolute;
+    z-index: 2;
     top: 0;
     left: 50%;
     width: 75%;
     background: rgba(255, 255, 255, 0.4);
     transform: translateX(-50%);
     padding: 1rem;
+}
+@media (max-width: 767px) {
+    .form-area {
+        position: relative;
+        margin: 1rem 0;
+    }
 }
 .form-area .form-wrapper {
     background: rgba(34, 72, 90, 0.4);
